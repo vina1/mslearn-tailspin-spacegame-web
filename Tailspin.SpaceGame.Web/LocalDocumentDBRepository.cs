@@ -58,7 +58,7 @@ namespace TailSpin.SpaceGame.Web
         )
         {
             var result = _items.AsQueryable()
-                .Where(queryPredicate) // filter
+                // .Where(queryPredicate) // filter
                 .OrderByDescending(orderDescendingPredicate) // sort
                 .Skip(page * pageSize) // find page
                 .Take(pageSize) // take items
